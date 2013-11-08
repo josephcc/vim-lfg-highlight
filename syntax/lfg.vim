@@ -18,12 +18,12 @@ syn region CLASS start="'" end="'" contains=PRED,UPDOWN
 
 syn match P "[A-Z]\+\s*-->"
 syn match A "[A-Z ()]\+\s*:"
-syn region RULES start='^[A-Z]\+.*-->' end='\.' contains=UPDOWN,P,A
+syn region RULES start='^\s*[A-Z]\+.*-->' end='\.' contains=UPDOWN,P,A
 
 
 syn match L "^\s*[a-zA-Z]\+\s"
 syn match A2 "[A-Z]\+\s*\*"
-syn region LEXICON start='^[A-Za-z]\+.*\*' end='\.' contains=UPDOWN,L,A2,CLASS
+syn region LEXICON start='^\s*[A-Za-z]\+.*\*' end='\.' contains=UPDOWN,L,A2,CLASS
 
 
 syn region GLOBAL start='^' end='$' contains=LEXICON, RULES
