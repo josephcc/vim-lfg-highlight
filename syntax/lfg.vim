@@ -16,13 +16,13 @@ else
 endif
 syn region CLASS start="'" end="'" contains=PRED,UPDOWN
 
-syn match P "[A-Z]\+\s*-->"
-syn match A "[A-Z ()]\+\s*:"
-syn region RULES start='^\s*[A-Z]\+.*-->' end='\.' contains=UPDOWN,P,A
+syn match P "[a-zA-Z]\+\s*-->"
+syn match A "[a-zA-Z ()]\+\s*:"
+syn region RULES start='^\s*[a-zA-Z]\+.*-->' end='\.' contains=UPDOWN,P,A
 
 
 syn match L "^\s*[a-zA-Z]\+\s"
-syn match A2 "[A-Z]\+\s*\*"
+syn match A2 "[a-zA-Z]\+\s*\*"
 syn region LEXICON start='^\s*[A-Za-z]\+.*\*' end='\.' contains=UPDOWN,L,A2,CLASS
 
 
